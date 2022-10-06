@@ -1,0 +1,23 @@
+.dashboard {
+  display: flex;
+
+  &__content {
+    margin: 50px 100px;
+  }
+
+  &__welcome {
+    &--user {
+      font-size: 30px;
+      display: flex;
+
+      .name {
+        color: #ff0101;
+        margin-left: 15px;
+      }
+    }
+
+    &--text {
+      margin-top: 20px;
+    }
+  }
+}

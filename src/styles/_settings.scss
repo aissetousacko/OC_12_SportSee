@@ -1,0 +1,20 @@
+$font-1: 'Roboto', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: #ffffff;
+    font-family: $font-1;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
