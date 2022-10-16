@@ -1,11 +1,18 @@
 .dashboard {
   display: flex;
+  flex-direction: column;
+  margin: 50px 90px 0 200px;
 
   &__content {
-    margin: 50px 100px;
+    // margin: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 31px;
   }
 
   &__welcome {
+    margin-bottom: 60px;
     &--user {
       font-size: 30px;
       display: flex;
@@ -19,5 +26,26 @@
     &--text {
       margin-top: 20px;
     }
+  }
+
+  /* &__graphs {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  &__activity {
+    margin-bottom: 30px;
+  }
+
+  &__other-graph {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cards {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

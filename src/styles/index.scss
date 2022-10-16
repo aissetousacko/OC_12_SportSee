@@ -1,6 +1,10 @@
 @import './settings';
 
+@import './pages/home';
 @import './pages/dashboard';
 
 @import './components/header';
 @import './components/verticalnavbar';
+@import './components/activity';
+@import './components/sessions';
+@import './components/card';

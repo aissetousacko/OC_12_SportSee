@@ -1,0 +1,24 @@
+.card {
+  width: 100%;
+  background-color: #fbfbfb;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__text {
+    margin-left: 20px;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
