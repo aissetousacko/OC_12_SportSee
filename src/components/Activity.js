@@ -9,6 +9,12 @@ import {
   Tooltip,
 } from 'recharts'
 
+/**
+ *
+ * @param {boolean} active
+ * @param {Array} payload
+ * @returns Customized Tooltip
+ */
 const CustomTooltip = ({ active, payload }) => {
   if (active) {
     return (
@@ -21,9 +27,13 @@ const CustomTooltip = ({ active, payload }) => {
   return null
 }
 
+/**
+ * Display a bar graph with the user daily activity results
+ * @component
+ * @param {Array} activity - array of user's activity
+ * @returns {JSX.Element} Activity component
+ */
 const Activity = ({ activity }) => {
-  // console.log('activity: ', activity)
-
   const renderLineChart = (
     <BarChart
       width={835}

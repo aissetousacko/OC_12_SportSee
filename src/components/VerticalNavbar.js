@@ -4,6 +4,11 @@ import swimming from '../assets/swimming.png'
 import cycling from '../assets/cycling.png'
 import bodybuilding from '../assets/bodybuilding.png'
 
+/**
+ * Display the vertical navbar
+ * @component
+ * @returns {JSX.Element} VerticalNavbar component
+ */
 const VerticalNavbar = () => {
   return (
     <div className="navbar">

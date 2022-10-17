@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
+/**
+ * Display the header of the dashboard
+ * @component
+ * @returns {JSX.Element} Header component
+ */
 const Header = () => {
   return (
     <div className="header">

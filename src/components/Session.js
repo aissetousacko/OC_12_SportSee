@@ -9,6 +9,12 @@ import {
   Tooltip,
 } from 'recharts'
 
+/**
+ *
+ * @param {boolean} active
+ * @param {Array} payload
+ * @returns Customized Tooltip
+ */
 const CustomTooltip = ({ active, payload }) => {
   if (active) {
     return (
@@ -32,9 +38,13 @@ const CustomCursor = ({ points }) => {
   )
 }
 
+/**
+ * Display a radar graph with the user performance results
+ * @component
+ * @param {Array} sessions - array of user's performance
+ * @returns {JSX.Element} Session component
+ */
 const Session = ({ sessions }) => {
-  // console.log(sessions)
-
   return (
     <div>
       <LineChart

@@ -8,9 +8,13 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 
+/**
+ * Display a radar graph with the user performance results
+ * @component
+ * @param {Array} performances - array of user's performance
+ * @returns {JSX.Element} Performance component
+ */
 const Performance = ({ performances }) => {
-  // console.log(performances)
-
   return (
     <div>
       <ResponsiveContainer width="100%" aspect={1}>

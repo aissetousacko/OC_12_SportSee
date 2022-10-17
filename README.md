@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+[![forthebadge](https://forthebadge.com/images/badges/0-percent-optimized.svg)](https://forthebadge.com)
+
+# SportSee
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

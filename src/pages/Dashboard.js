@@ -19,6 +19,10 @@ import protein from '../assets/protein.png'
 import carbonhydrates from '../assets/carbonhydrates.png'
 import lipids from '../assets/lipids.png'
 
+/**
+ * Creation of the Dashboard page
+ * @returns {JSX.Element} Dashboard component
+ */
 const Dashboard = () => {
   const { id } = useParams()
 
@@ -64,7 +68,6 @@ const Dashboard = () => {
               <div className="dashboard__welcome--user">
                 <h1>Bonjour</h1>
                 <h1 className="name">{data.userDatas.firstName}</h1>
-                {console.log('data: ', data)}
               </div>
               <p className="dashboard__welcome--text">
                 Félicitations ! Vous avez explosé vos objectifs hier 👏

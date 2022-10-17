@@ -6,8 +6,13 @@ import {
   PolarAngleAxis,
 } from 'recharts'
 
+/**
+ * Display a radial graph with the user score results
+ * @component
+ * @param {Array} score - array of user's score
+ * @returns {JSX.Element} Score component
+ */
 const Score = ({ score }) => {
-  // console.log(score)
   const data = [
     {
       uv: score,

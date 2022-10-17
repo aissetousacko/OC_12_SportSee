@@ -12,12 +12,15 @@ import {
 
 let mocked = true
 
+/**
+ * Retrieve and format the user's data
+ * @param {number} id
+ * @returns {Object} An object with the information of the user
+ */
 export const getUserMainData = async (id) => {
   if (mocked) {
     const data = USER_MAIN_DATA.find((elt) => elt.id.toString() === id)
-    // console.log('data: ', data)
     const userData = new UserMainData(data)
-    // console.log('userData: ', userData)
     return userData
   } else {
     const data = await axios
@@ -25,18 +28,20 @@ export const getUserMainData = async (id) => {
       .then((response) => {
         return response.data.data
       })
-    // console.log('data: ', data)
     const userData = new UserMainData(data)
-    // console.log('userData: ', userData)
     return userData
   }
 }
+
+/**
+ * Retrieve and format the activities's data
+ * @param {number} id
+ * @returns {Object} An object with the information of the user's activity
+ */
 export const getUserActivity = async (id) => {
   if (mocked) {
     const data = USER_ACTIVITY.find((elt) => elt.userId.toString() === id)
-    // console.log('data: ', data)
     const userActivity = new UserActivity(data, id)
-    // console.log('userActivity: ', userActivity)
     return userActivity
   } else {
     const data = await axios
@@ -44,20 +49,22 @@ export const getUserActivity = async (id) => {
       .then((response) => {
         return response.data.data
       })
-    // console.log('data: ', data)
     const userActivity = new UserActivity(data)
-    // console.log('userActivity: ', userActivity)
     return userActivity
   }
 }
+
+/**
+ * Retrieve and format the average sessions's data
+ * @param {*} id
+ * @returns {Object} An object with the information of the user's average sessions
+ */
 export const getUserSessions = async (id) => {
   if (mocked) {
     const data = USER_AVERAGE_SESSIONS.find(
       (elt) => elt.userId.toString() === id
     )
-    // console.log('data: ', data)
     const userSessions = new UserSessions(data, id)
-    // console.log('userSessions: ', userSessions)
     return userSessions
   } else {
     const data = await axios
@@ -65,18 +72,20 @@ export const getUserSessions = async (id) => {
       .then((response) => {
         return response.data.data
       })
-    // console.log('data: ', data)
     const userSessions = new UserSessions(data)
-    // console.log('userSessions: ', userSessions)
     return userSessions
   }
 }
+
+/**
+ * Retrieve and format the performance's data
+ * @param {*} id
+ * @returns {Object} An object with the information of the user's performance
+ */
 export const getUserPerformance = async (id) => {
   if (mocked) {
     const data = USER_PERFORMANCE.find((elt) => elt.userId.toString() === id)
-    // console.log('data: ', data)
     const userPerformance = new UserPerformance(data)
-    // console.log('userPerformance: ', userPerformance)
     return userPerformance
   } else {
     const data = await axios
@@ -84,9 +93,8 @@ export const getUserPerformance = async (id) => {
       .then((response) => {
         return response.data.data
       })
-    // console.log('data: ', data)
     const userPerformance = new UserPerformance(data)
-    // console.log('userPerformance: ', userPerformance)
+    console.log(userPerformance)
     return userPerformance
   }
 }
