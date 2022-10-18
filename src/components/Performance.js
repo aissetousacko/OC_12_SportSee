@@ -7,6 +7,7 @@ import {
   Radar,
   ResponsiveContainer,
 } from 'recharts'
+import PropTypes from 'prop-types'
 
 /**
  * Display a radar graph with the user performance results
@@ -43,6 +44,15 @@ const Performance = ({ performances }) => {
       </ResponsiveContainer>
     </div>
   )
+}
+
+Performance.propTypes = {
+  performance: PropTypes.arrayOf(
+    PropTypes.shape({
+      kind: PropTypes.string,
+      value: PropTypes.number,
+    })
+  ),
 }
 
 export default Performance

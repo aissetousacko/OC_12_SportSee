@@ -8,6 +8,7 @@ import {
   Legend,
   Tooltip,
 } from 'recharts'
+import PropTypes from 'prop-types'
 
 /**
  *
@@ -102,6 +103,16 @@ const Activity = ({ activity }) => {
   )
 
   return <div className="activity">{renderLineChart}</div>
+}
+
+Activity.propTypes = {
+  activity: PropTypes.arrayOf(
+    PropTypes.shape({
+      calories: PropTypes.number,
+      day: PropTypes.string,
+      kilogram: PropTypes.number,
+    })
+  ),
 }
 
 export default Activity

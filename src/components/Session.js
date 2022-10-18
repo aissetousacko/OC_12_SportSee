@@ -8,6 +8,7 @@ import {
   Rectangle,
   Tooltip,
 } from 'recharts'
+import PropTypes from 'prop-types'
 
 /**
  *
@@ -45,6 +46,7 @@ const CustomCursor = ({ points }) => {
  * @returns {JSX.Element} Session component
  */
 const Session = ({ sessions }) => {
+  console.log(sessions)
   return (
     <div>
       <LineChart
@@ -112,6 +114,15 @@ const Session = ({ sessions }) => {
       </LineChart>
     </div>
   )
+}
+
+Session.propTypes = {
+  sessions: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string,
+      sessionLength: PropTypes.number,
+    })
+  ),
 }
 
 export default Session

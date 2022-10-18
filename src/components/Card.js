@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 /**
  * Display cards with icon and calories, proteins, lipids or carbohydrates values
@@ -6,7 +7,7 @@ import React from 'react'
  * @param {String} img - icon
  * @param {Number} data - quantity number
  * @param {String} unit
- * @param {Array} text
+ * @param {String} text
  * @returns {JSX.Element} Card component
  */
 const Card = ({ img, data, unit, text }) => {
@@ -21,6 +22,13 @@ const Card = ({ img, data, unit, text }) => {
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  img: PropTypes.string,
+  data: PropTypes.number,
+  unit: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default Card

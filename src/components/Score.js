@@ -5,6 +5,7 @@ import {
   ResponsiveContainer,
   PolarAngleAxis,
 } from 'recharts'
+import PropTypes from 'prop-types'
 
 /**
  * Display a radial graph with the user score results
@@ -93,6 +94,10 @@ const Score = ({ score }) => {
       </ResponsiveContainer>
     </div>
   )
+}
+
+Score.propTypes = {
+  score: PropTypes.number,
 }
 
 export default Score
