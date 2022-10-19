@@ -52,10 +52,6 @@ const Dashboard = () => {
     getData()
   }, [id])
 
-  if (!data) {
-    return null
-  }
-
   return (
     <>
       <VerticalNavbar />

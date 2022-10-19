@@ -46,7 +46,6 @@ const CustomCursor = ({ points }) => {
  * @returns {JSX.Element} Session component
  */
 const Session = ({ sessions }) => {
-  console.log(sessions)
   return (
     <div>
       <LineChart

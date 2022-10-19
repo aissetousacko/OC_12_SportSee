@@ -10,15 +10,13 @@ import {
   USER_PERFORMANCE,
 } from '../datas/mocked-data.js'
 
-let mocked = true
-
 /**
  * Retrieve and format the user's data
  * @param {number} id
  * @returns {Object} An object with the information of the user
  */
 export const getUserMainData = async (id) => {
-  if (mocked) {
+  if (id === '13' || id === '19') {
     const data = USER_MAIN_DATA.find((elt) => elt.id.toString() === id)
     const userData = new UserMainData(data)
     return userData
@@ -39,7 +37,7 @@ export const getUserMainData = async (id) => {
  * @returns {Object} An object with the information of the user's activity
  */
 export const getUserActivity = async (id) => {
-  if (mocked) {
+  if (id === '13' || id === '19') {
     const data = USER_ACTIVITY.find((elt) => elt.userId.toString() === id)
     const userActivity = new UserActivity(data, id)
     return userActivity
@@ -60,7 +58,7 @@ export const getUserActivity = async (id) => {
  * @returns {Object} An object with the information of the user's average sessions
  */
 export const getUserSessions = async (id) => {
-  if (mocked) {
+  if (id === '13' || id === '19') {
     const data = USER_AVERAGE_SESSIONS.find(
       (elt) => elt.userId.toString() === id
     )
@@ -83,7 +81,7 @@ export const getUserSessions = async (id) => {
  * @returns {Object} An object with the information of the user's performance
  */
 export const getUserPerformance = async (id) => {
-  if (mocked) {
+  if (id === '13' || id === '19') {
     const data = USER_PERFORMANCE.find((elt) => elt.userId.toString() === id)
     const userPerformance = new UserPerformance(data)
     return userPerformance
@@ -94,7 +92,6 @@ export const getUserPerformance = async (id) => {
         return response.data.data
       })
     const userPerformance = new UserPerformance(data)
-    console.log(userPerformance)
     return userPerformance
   }
 }
