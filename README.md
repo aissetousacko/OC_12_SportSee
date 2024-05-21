@@ -1,6 +1,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-![logo](src/assets/logo.png)
+<p align=center>
+  <img src="/src/assets/logo.png" alt="Logo SportSee" />
+</p>
 
 ---
 
@@ -26,19 +28,19 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 ## Installing the app
 
 - Forke and clone the repository : https://github.com/aissetousacko/OC_12_SportSee.git
-- Run the `yarn` command will allow you to install the dependencies
+- Run the `yarn install` or `npm install` command will allow you to install the dependencies
 
 ##### Back End :
 
 - Open a new terminal and run `cd back-end` command,
-- Run `yarn dev`command, the backend will open on http://localhost:3000
+- Run `yarn dev` or `npm dev` command, the backend will open on http://localhost:3000
 
 ##### Front End:
 
-- Open a new terminal, then run the `yarn start` command will allow you to run the application on http://localhost:3001
+- Open a new terminal, then run the `yarn start` or `npm start` command will allow you to run the application on http://localhost:3001
 
 ---
 
 ### Author
 
-Aïssetou SACKO
+Aïssetou SACKO - This project is a study project carried out with Openclassrooms
