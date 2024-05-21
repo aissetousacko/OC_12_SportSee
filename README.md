@@ -10,7 +10,6 @@
 
 SportSee project is an application for sportive people that want to follow their daily progress through analytics dashboard.
 
----
 
 ## Prerequisites
 
@@ -23,7 +22,6 @@ SportSee project is an application for sportive people that want to follow their
 
 If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). This tool will allow you to easily manage your NodeJS versions.
 
----
 
 ## Installing the app
 
@@ -39,8 +37,8 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 - Open a new terminal, then run the `yarn start` or `npm start` command will allow you to run the application on http://localhost:3001
 
----
 
-### Author
+
+## Author
 
 Aïssetou SACKO - This project is a study project carried out with Openclassrooms
