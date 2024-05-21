@@ -25,11 +25,11 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 ## Installing the app
 
-- Forke and clone the repository : https://github.com/aissetousacko/OC_12_SportSee.git
+- Forke and clone the repository : https://github.com/aissetousacko/SportSee.git
 - Run the `yarn install` or `npm install` command will allow you to install the dependencies
 
 ##### Back End :
-
+- Forke and clone the repository : https://github.com/aissetousacko/P12-front-end-dashboard.git
 - Open a new terminal and run `cd back-end` command,
 - Run `yarn dev` or `npm dev` command, the backend will open on http://localhost:3000
 
